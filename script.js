@@ -78,26 +78,3 @@ window.onload = function() {
     });
 }
 
-// Get the audio element
-const music = document.getElementById('background-music');
-
-// Get the toggle button
-const toggleButton = document.getElementById('toggle-audio-btn');
-
-// Variable to track music state
-let isPlaying = true;
-
-// Function to toggle the audio
-function toggleAudio() {
-    if (isPlaying) {
-        music.pause(); // Pause the music
-        toggleButton.textContent = '🔈'; // Update button text
-    } else {
-        music.play(); // Play the music
-        toggleButton.textContent = '🔈'; // Update button text
-    }
-    isPlaying = !isPlaying; // Toggle the state
-}
-
-// Add click event listener to the button
-toggleButton.addEventListener('click', toggleAudio);
